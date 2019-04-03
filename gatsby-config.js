@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'overafaik',
+    title: 'OverAFAIK',
     author: 'Behzad Abbasi',
-    description: 'Personal blog by Behzad Abbasi (behzad888). thoughts and code.',
+    description:
+      'Personal blog by Behzad Abbasi (behzad888). thoughts and code.',
     siteUrl: 'http://overafaik.com',
     social: {
       twitter: '@behzadabbasi88',

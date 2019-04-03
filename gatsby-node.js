@@ -138,6 +138,7 @@ exports.createPages = ({ graphql, actions }) => {
             // Record which links to internal posts have translated versions
             // into this language. We'll replace them before rendering HTML.
             let translatedLinks = [];
+            debugger;
             const { langKey, maybeAbsoluteLinks } = post.node.fields;
             maybeAbsoluteLinks.forEach(link => {
               if (allSlugs.has(link)) {
