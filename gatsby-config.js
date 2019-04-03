@@ -4,7 +4,7 @@ module.exports = {
     author: 'Behzad Abbasi',
     description:
       'Personal blog by Behzad Abbasi (behzad888). thoughts and code.',
-    siteUrl: 'http://overafaik.com',
+    siteUrl: 'https://overafaik.com',
     social: {
       twitter: '@behzadabbasi88',
     },

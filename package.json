@@ -45,7 +45,7 @@
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2"
   },
-  "homepage": "http://overafaik.com",
+  "homepage": "https://overafaik.com",
   "license": "MIT",
   "scripts": {
     "dev": "gatsby develop",
