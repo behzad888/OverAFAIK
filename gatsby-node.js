@@ -57,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
                     slug
                     langKey
                     directoryName
-                    maybeAbsoluteLinks
+                    #maybeAbsoluteLinks
                   }
                   frontmatter {
                     title
