@@ -6,7 +6,7 @@ spoiler: Initiation Phase.
 
 Starting a project, or the initiation phase is a specific process in the project lifecycle. Getting that process right is the first step in successfully managing any project. In this blog, I'll try to elaborate on why and how we can manage the project by tools.
 
-After speaking to my friend I decided to split each section.
+After talking to my friend I decided to split each section.
 
 There are many steps that every front-end developers and maintainers should know, they are:
  - [How to formatting codes](https://overafaik.com/formatting-codes)
