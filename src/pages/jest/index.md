@@ -255,6 +255,62 @@ In this example, First, I want to be sure for each `describe` block `root` eleme
 
 So, to simulate events we can use React `dispatchEvent` and check valuse by matchers. In this example I used [`toHaveBeenCalledTimes`](https://jestjs.io/docs/en/expect#tohavebeencalledtimesnumber)  to ensure that a mock function got called exact number of times.
 
+## Testing Asynchronous Code
+
+> It's common in JavaScript for code to run asynchronously. When you have code that runs asynchronously, Jest needs to know when the code it is testing has completed, before it can move on to another test. Jest has several ways to handle this.
+
+### Callbacks
+
+The most common asynchronous pattern is callbacks.In this situation the test will complete as soon as fetchData completes, before ever calling the callback.
+
+```js
+it('the data is peanut butter', done => {
+  function callback(data) {
+    expect(data).toBe('peanut butter');
+    done();
+  }
+
+  fetchData(callback);
+});
+```
+
+If `done()` is never called, the test will fail, which is what you want to happen.
+
+### Promises
+
+> If your code uses promises, there is a simpler way to handle asynchronous tests. Just return a promise from your test, and Jest will wait for that promise to resolve. If the promise is rejected, the test will automatically fail.
+
+```js
+it('the data is peanut butter', () => {
+  return fetchData().then(data => {
+    expect(data).toBe('peanut butter');
+  });
+});
+```
+
+### Async/Await
+
+Alternatively, you can use `async` and `await` in your tests. To write an `async` test, just use the async keyword in front of the function passed to `test`.
+
+```js
+it('the data is peanut butter', async () => {
+  expect.assertions(1);
+  const data = await fetchData();
+  expect(data).toBe('peanut butter');
+});
+
+it('the fetch fails with an error', async () => {
+  expect.assertions(1);
+  try {
+    await fetchData();
+  } catch (e) {
+    expect(e).toMatch('error');
+  }
+});
+```
+
+In these cases, `async` and `await` are effectively just syntactic sugar for the same logic as the promises example uses.
+
 Now, You can test what you want to check but dont forget:
  - What should I test?
  - When do I test it?
