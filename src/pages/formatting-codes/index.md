@@ -1,12 +1,12 @@
 ---
 title: Code Prettier
 date: '2019-04-15'
-spoiler: How to formatting codes.
+spoiler: How to format codes.
 ---
 
 There are many steps that every front-end developers and maintainers should know, they are:
- - [How to formatting codes](https://overafaik.com/formatting-codes)
- - [How to reporting on patterns found in ECMAScript/JavaScript code](https://overafaik.com/linting-codes)
+ - [How to format codes](https://overafaik.com/formatting-codes)
+ - [How to report on patterns found in ECMAScript/JavaScript code](https://overafaik.com/linting-codes)
  - [How to check object types](https://overafaik.com/flow-type-check)
  - [How to test everything](https://overafaik.com/jest)
  - [How to build the project](https://overafaik.com/build-project)

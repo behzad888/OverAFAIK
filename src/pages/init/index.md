@@ -9,8 +9,8 @@ Starting a project, or the initiation phase is a specific process in the project
 After talking to my friend I decided to split each section.
 
 There are many steps that every front-end developers and maintainers should know, they are:
- - [How to formatting codes](https://overafaik.com/formatting-codes)
- - [How to reporting on patterns found in ECMAScript/JavaScript code](https://overafaik.com/linting-codes)
+ - [How to format codes](https://overafaik.com/formatting-codes)
+ - [How to report on patterns found in ECMAScript/JavaScript code](https://overafaik.com/linting-codes)
  - [How to check object types](https://overafaik.com/flow-type-check)
  - [How to test everything](https://overafaik.com/jest)
  - [How to build the project](https://overafaik.com/build-project)
